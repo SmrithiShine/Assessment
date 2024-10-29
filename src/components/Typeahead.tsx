@@ -46,25 +46,3 @@ const Typeahead: React.FC<TypeaheadProps> = ({ query, onSuggestionSelect }) => {
 
 export default Typeahead;
 
-/*import React from 'react';
-
-interface TypeaheadProps {
-    suggestions: string[];
-    onSelect: (suggestion: string) => void;
-}
-
-const Typeahead: React.FC<TypeaheadProps> = ({ suggestions, onSelect }) => {
-    if (suggestions.length === 0) return null;
-
-    return (
-        <ul className="typeahead-dropdown">
-            {suggestions.map((suggestion, index) => (
-                <li key={index} onClick={() => onSelect(suggestion)} className="typeahead-item">
-                    {suggestion}
-                </li>
-            ))}
-        </ul>
-    );
-};
-
-export default Typeahead;*/
